@@ -3,7 +3,7 @@ public class Converter {
  final static double caloriesSteps = 50;
 
  static void convert(int steps){
-     System.out.println("Пройденная дистанция(в километрах): " + (steps * kiloSteps / 1000));
-     System.out.println("Количество сгоревших килокалорий: " + (steps * caloriesSteps / 1000));
+     System.out.println("Пройденная дистанция(в километрах): " + (steps * kiloSteps / 1000));  // преобразование шагов в километры
+     System.out.println("Количество сгоревших килокалорий: " + (steps * caloriesSteps / 1000)); // преобразование шагов в калории
  }
-}
+} 

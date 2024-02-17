@@ -1,9 +1,12 @@
 public class Converter {
  final static double kiloSteps = 0.75;
- final static double caloriesSteps = 50;
+    final static int caloriesSteps = 50;
 
- static void convert(int steps){
-     System.out.println("Пройденная дистанция(в километрах): " + (steps * kiloSteps / 1000));  // преобразование шагов в километры
-     System.out.println("Количество сгоревших килокалорий: " + (steps * caloriesSteps / 1000)); // преобразование шагов в калории
+    public static double getKilometers(int steps) {
+        return steps * kiloSteps / 1000;
+    }
+
+    public static int getCalories(int steps) {
+        return steps * caloriesSteps / 1000;
  }
-} 
+}
